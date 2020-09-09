@@ -1,0 +1,151 @@
+$main: #252529
+$secondary: #8b8b9f
+$highlight: #73e298
+$white: #FFFFFF
+
+*
+    box-sizing: border-box
+
+html, body
+    font-family: 'Open Sans', sans-serif
+
+.clearfix:before, .clearfix:after
+    content: " "
+    display: table
+.clearfix:after
+    clear: both
+
+.wrapper
+    width: 1440px
+    max-width: 90%
+    margin: 0 auto
+
+h1, h2, h3, h4, h5, h6
+    font-weight: 300
+
+#top_header
+  padding:   1.5em 0
+  .logo
+      float: left
+      text-transform: uppercase
+      font-size: 1.15em
+      font-weight: 700
+      span
+          font-weight: 300
+          color: $highlight
+
+#main_nav
+    float: right
+    font-size: .9em
+    padding-top: 1em
+    a
+      color: $secondary
+      text-decoration: none
+      margin-left: 1em
+
+.menu
+    display: none
+
+
+
+#top_movies, #top_shows
+    padding: 1em 0
+    header
+        padding: 0 0 1.5em 0
+        h2, .view_more
+            display: inline
+        h2
+            font-size: 1.75em
+        .view_more
+            float: right
+            font-size: .8em
+            margin: .75em 3.5% 0 0
+
+
+#top_movies
+    border-bottom: 1px solid #d4d4d4
+
+.row
+    width: 100%
+    .post
+        width: 14%
+        float: left
+        margin-right: 2.5%
+        img
+            width: 100%
+            max-width: 100%
+            border-radius: .5em
+        .title
+            font-size: 1.25em
+            margin: 1em 0 0 0
+            color: $main
+        .post_info
+            font-size: .75em
+            color: $secondary
+            margin: 0.5em 0
+
+#newsletter
+    padding: 5em 0
+    text-align: center
+    background: #2a2a2e
+    .newsletter_inner
+        width: 600px
+        max-width: 90%
+        margin: 0 auto
+    h2
+        font-size: 1.75em
+        color: $white
+    .sign_up_form
+        margin-top: 3em
+        input[type="text"], input[type="email"]
+            width: 40%
+            margin: 0 .5%
+            height: 3.25em
+            border: none
+            outline: none
+            border-radius: .3em
+            background: #404043
+            padding: .5em 1.25em
+            color: $white
+        .button
+            border: none
+            outline: none
+            padding: 1em 4.5em
+            border-radius: 2em
+            background: $highlight
+            color: $white
+            font-size: .9em
+            font-weight: 700
+            margin-top: 3em
+
+
+@media screen and (max-width: 575px)
+    #banner
+        #banner_content_wrapper
+            display: block
+            #poster
+                width: 250px
+                float: none
+                display: block
+                margin: 0 auto
+            #content
+                width: 100%
+                margin: 1em auto 0 auto
+    #top_movies, #top_shows
+        margin-bottom: 2em
+    .row
+        .post
+            width: 250px
+            margin: 0 auto 2em auto
+            float: none
+    #newsletter
+        padding: 3em 0
+        h2
+            font-size: 1.35em
+        .sign_up_form
+            margin-top: 2em
+            input[type="text"], input[type="email"]
+                width: 90%
+                margin: 0 0 1em 0
+            .button
+                margin-top: 2em
