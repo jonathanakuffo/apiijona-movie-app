@@ -9,7 +9,7 @@
             "localRoot": "${workspaceFolder}",
             "name": "homework6-heroku",
             "port": 9229,
-            "remoteRoot": "C:\Users\Awurakua Asiedu\Desktop\HOMEWORK\homework6 part2",
+            "remoteRoot": "heroku git:remote -a homework6-heroku",
             "request": "attach",
             "skipFiles": [
                 "<node_internals>/**"
