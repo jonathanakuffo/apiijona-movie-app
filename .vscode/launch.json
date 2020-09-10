@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "address": "https://git.heroku.com/homework6-heroku.git",
+            "address": "http://127.0.0.1:5500/",
             "localRoot": "${workspaceFolder}",
             "name": "homework6-heroku",
             "port": 9229,
