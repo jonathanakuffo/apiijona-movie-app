@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "address": "https://git.heroku.com/homework6-heroku.git",
+            "localRoot": "${workspaceFolder}",
+            "name": "homework6-heroku",
+            "port": 9229,
+            "remoteRoot": "C:\Users\Awurakua Asiedu\Desktop\HOMEWORK\homework6 part2",
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
             "type": "pwa-node",
             "request": "launch",
             "name": "Launch Program",
